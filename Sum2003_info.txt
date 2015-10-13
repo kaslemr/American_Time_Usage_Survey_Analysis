@@ -1,0 +1,43 @@
+
+The file atussum_2003.dat (2003 Activity Summary file) contains 430 variables and 20,720 observations.  
+
+The 2003 Activity Summary file contains data for the total number of minutes that each respondent spent doing each 6-digit 
+activity.  Each record corresponds to a unique respondent, as indicated by a unique value of the variable TUCASEID.  
+Each variable corresponds to an activity that at least one survey respondent reported doing for one minute or more.  
+
+The variable names identify activities by their 6-digit codes.  The letter "t" precedes the 6-digit codes.  
+The first and second digits of the 6-digit code correspond to the variable 
+tutier1code; the third and fourth digits of the 6-digit code correspond to the variable tutier2code; and, 
+the fifth and sixth digits of the 6-digit code correspond to the variable tutier3code.  For example, the variable 
+"t040102" refers to the activity with tutier1code=04, tutier2code=01, and tutier3code=02.  As documented in 
+the ATUS 2003 Coding Lexicon (http://www.bls.gov/tus/lexiconwex2003.pdf), activity code "040102" corresponds to 
+"Caring for and helping nonhousehold members/Caring for and helping nonhousehold children/Reading to or with 
+nonhousehold children." See Chapter 5 of the ATUS User's Guide (http://www.bls.gov/tus/atususersguide.pdf) for 
+more information about the ATUS Coding Lexicon.  
+
+In addition to the activity code variables (t010101...t509999), the file atussum_2003.zip includes selected variables
+(such as age, sex, and labor force status of the respondent) from the Respondent and ATUS-CPS files.  The definitions for
+variables that begin with the letter "P" or "G" appear in the 2003 ATUS-CPS Data Dictionary, available at 
+http://www.bls.gov/tus/atuscpscodebook.pdf; the definitions for variables that begin with the letter "T" (other than
+tu010101...t509999) appear in the 2003 ATUS Interview Data Dictionary, available at 
+http://www.bls.gov/tus/atusintcodebook.pdf.       
+
+In addition to the data file, four computer programs are contained in atussum_2003.zip.  If you have SPSS, SAS, or Stata
+software, you may use these programs to read the data into your statistical software package.  
+
+The file "atussum8_2003.sps" reads the data into SPSS; in this version, some variable names have been re-named such that their length does not exceed 8.
+
+The file "atussum_2003.sps" reads the data into SPSS; some variable names exceed length 8.
+
+The file "atussum_2003.sas" reads the data into SAS.
+
+The file "atussum_2003.do" reads the data into Stata.
+
+If you have SAS, SPSS, or Stata software, open the corresponding program, edit the infile (in SAS), file (in SPSS), or insheet (in Stata) statement to reference the data file on your computer, and run the program. 
+
+Special notice about the 2003 Activity Summary file:
+     The variable TU06FWGT was added to the 2003 Activity Summary file on June 28, 2007.  TU06FWGT is a statistical weight that was generated using the 2006 weighting method.  No other data were changed.
+
+     Users who combine multiple years of data must use weights that were generated using comparable methods. 
+     For more information on combining multiple years of ATUS data, please see http://www.bls.gov/tus/pooling.htm.
+
